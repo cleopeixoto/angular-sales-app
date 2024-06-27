@@ -1,130 +1,131 @@
+import { Product } from "../interfaces/Product";
+
 export const categories = [
   "Automobiles",
   "Eletronics",
   "Clothing",
-  "Home Appliances",
-  "Books"
+  "Accessories",
 ];
 
-export const products = [
+export const products: Product[] = [
   {
     "id": 1,
-    "name": "Corolla",
+    "name": "Car",
     "category": "Automobiles",
     "brandId": 1
   },
   {
     "id": 2,
-    "name": "Camry",
+    "name": "Car",
     "category": "Automobiles",
-    "brandId": 1
+    "brandId": 7
   },
   {
     "id": 3,
-    "name": "RAV4",
+    "name": "Truck",
     "category": "Automobiles",
-    "brandId": 1
+    "brandId": 7
   },
   {
     "id": 4,
-    "name": "Highlander",
+    "name": "Truck",
     "category": "Automobiles",
-    "brandId": 1
+    "brandId": 6
   },
   {
     "id": 5,
-    "name": "iPhone 13 Pro",
-    "category": "Electronics",
-    "brandId": 2
+    "name": "T-Shirt",
+    "category": "Clothing",
+    "brandId": 5
   },
   {
     "id": 6,
-    "name": "MacBook Pro 13-inch",
-    "category": "Electronics",
-    "brandId": 2
+    "name": "Bus",
+    "category": "Automobiles",
+    "brandId": 6
   },
   {
     "id": 7,
-    "name": "iPad Air",
-    "category": "Electronics",
-    "brandId": 2
+    "name": "Bus",
+    "category": "Automobiles",
+    "brandId": 7
   },
   {
     "id": 8,
-    "name": "Apple Watch Series 7",
-    "category": "Electronics",
+    "name": "Smartphone",
+    "category": "Eletronics",
     "brandId": 2
   },
   {
     "id": 9,
-    "name": "Air Max 270",
-    "category": "Clothing",
-    "brandId": 3
+    "name": "Smartphone",
+    "category": "Eletronics",
+    "brandId": 4
   },
   {
     "id": 10,
-    "name": "Air Force 1",
-    "category": "Clothing",
-    "brandId": 3
+    "name": "Laptop",
+    "category": "Eletronics",
+    "brandId": 2
   },
   {
     "id": 11,
-    "name": "Nike Free RN 5.0",
-    "category": "Clothing",
-    "brandId": 3
+    "name": "Laptop",
+    "category": "Eletronics",
+    "brandId": 4
   },
   {
     "id": 12,
-    "name": "Nike Pro Shorts",
-    "category": "Clothing",
-    "brandId": 3
+    "name": "Tablet",
+    "category": "Eletronics",
+    "brandId": 2
   },
   {
     "id": 13,
-    "name": "Galaxy S21 Ultra",
-    "category": "Electronics",
+    "name": "Tablet",
+    "category": "Eletronics",
     "brandId": 4
   },
   {
     "id": 14,
-    "name": "Galaxy Tab S7+",
-    "category": "Electronics",
-    "brandId": 4
+    "name": "Running Shoes",
+    "category": "Clothing",
+    "brandId": 3
   },
   {
     "id": 15,
-    "name": "Samsung QLED QN90A",
-    "category": "Electronics",
-    "brandId": 4
+    "name": "Running Shoes",
+    "category": "Clothing",
+    "brandId": 5
   },
   {
     "id": 16,
-    "name": "Samsung Odyssey G7 Monitor",
-    "category": "Electronics",
-    "brandId": 4
+    "name": "Basketball Shoes",
+    "category": "Clothing",
+    "brandId": 3
   },
   {
     "id": 17,
-    "name": "PlayStation 5",
-    "category": "Electronics",
+    "name": "Basketball Shoes",
+    "category": "Clothing",
     "brandId": 5
   },
   {
     "id": 18,
-    "name": "Sony Xperia 1 III",
-    "category": "Electronics",
-    "brandId": 5
+    "name": "Smartwatch",
+    "category": "Accessories",
+    "brandId": 4
   },
   {
     "id": 19,
-    "name": "Sony BRAVIA XR A90J",
-    "category": "Electronics",
-    "brandId": 5
+    "name": "Fitness Tracker",
+    "category": "Accessories",
+    "brandId": 4
   },
   {
     "id": 20,
-    "name": "Sony Alpha 7 IV",
-    "category": "Electronics",
-    "brandId": 5
-  }
+    "name": "Headphones",
+    "category": "Eletronics",
+    "brandId": 4
+  },
 ];

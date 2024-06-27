@@ -5,5 +5,5 @@ import { Product } from "./Product";
 export interface Brand {
   id: number;
   name: string;
-  abbreviation: string;
+  products: string[]
 }

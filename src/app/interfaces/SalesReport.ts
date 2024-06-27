@@ -7,8 +7,8 @@ export interface Sales {
 }
 
 export interface SalesReport {
-  month: string;
-  sales: number;
+  name: string;   // Name of the month
+  value: number;  // Quantity of sales
 }
 
 // The "sales" value is a formula considering the quantity that the same product was sold
