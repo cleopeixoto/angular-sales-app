@@ -1,1 +1,67 @@
-<p>sales-report works!</p>
+<div class="sales-report-container">
+  <div class="selectors">
+
+    <form [formGroup]="salesForm">
+      <mat-form-field>
+        <mat-label>Category</mat-label>
+        <mat-select formControlName="category" required (valueChange)="updateData()">
+          @for (category of categoryOptions; track category) {
+            <!-- <option [value]="category">{{ category }}</option> -->
+             <mat-option [value]="category">{{ category }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field> 
+
+      <mat-form-field>
+        <mat-label>Product</mat-label>
+        <mat-select formControlName="productId" required (valueChange)="updateData()">
+          @for (product of productOptions; track product) {
+            <!-- <option [value]="product">{{ product }}</option> -->
+             <mat-option [value]="product.id">{{ product.name }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field> 
+
+      <mat-form-field>
+        <mat-label>Brand</mat-label>
+        <mat-select formControlName="brandId" required (valueChange)="updateData()">
+          @for (brand of brandOptions; track brand) {
+            <!-- <option [value]="brand">{{ brand }}</option> -->
+             <mat-option [value]="brand.id">{{ brand.name }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field> 
+    </form>
+
+    <!-- <select name="selector" (click)="updateData()">
+      @for (category of categoryOptions; track category; let i = $index) {
+        <option [value]="category" [selected]="i === 0">{{ category }}</option>
+      }
+    </select> -->
+
+    <!-- <select name="selector" (click)="updateData()">
+      @for (product of productOptions; track product; let i = $index) {
+        <option [value]="product.id" [selected]="i === 0">{{ product.name }}</option>
+      }
+    </select>
+
+    <select name="selector"  (click)="updateData()">
+      @for (brand of brandOptions; track brand; let i = $index) {
+        <option [value]="brand.id" [selected]="i === 0">{{ brand.name }}</option>
+      }
+    </select> -->
+  </div>
+
+  <ngx-charts-bar-vertical
+    [results]="data"
+    [view]="[700, 400]"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="false"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxisLabel]="'Month'"
+    [yAxisLabel]="'Sales quantity'"
+    (select)="onSelect($event)">
+  </ngx-charts-bar-vertical>
+</div>
