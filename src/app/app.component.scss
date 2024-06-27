@@ -1,0 +1,40 @@
+@import "../styles.scss";
+
+.app-container {
+  .menu {
+    background-color: $main-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+
+    .home {
+      margin: 0 15px 0;
+      padding: 15px;
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+
+  .app-content {
+    margin: 50px 40px;
+  }
+
+  .app-footer {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    height: 50px;
+    background-color: #404040;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="menu-container">
+	<div class="icons">
+		<i class="fa fa-bars" (click)="toggleMenu = !toggleMenu"></i>
+
+		<div class="user">
+			<i class="fa fa-user"></i>
+			<span class="username">Gabriel</span>
+		</div>
+	</div>
+	
+	@if (toggleMenu) {
+		<ul class="menu-bar">
+			<li class="menu-item">
+				<a href="">Sales Report</a>
+			</li>
+		</ul>
+	}
+</div>
