@@ -2,7 +2,7 @@ import { Sales } from "../interfaces/SalesReport";
 
 /**
  * This is a MOCKUP simulating the sales of all Products during months. This list was created by ChatGPT-3.5.
- * We are considering only the first 4 months of 2024 year
+ * We are considering only the first 4 months of 2024 year (not being actually used right now)
  */
 export const sales: Sales[] = [
   {"id": 1, "year": "2024", "month": "January", "productId": 0, "quantity": 38},

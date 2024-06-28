@@ -2,9 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { SalesService } from '../../services/sales.service';
-import { categories, products } from '../../mockups/products';
+import { categories } from '../../mockups/products';
 import { brands } from '../../mockups/brands';
-import { Brand } from '../../interfaces/Brand';
 import { SalesReport } from '../../interfaces/SalesReport';
 import { Product } from '../../interfaces/Product';
 import { ProductService } from '../../services/product.service';
@@ -62,7 +61,6 @@ export class SalesReportComponent implements OnInit {
    * Method repsonsible to update the other selectors when one of them is changed
    */
   updateSelectors(): void {
-    console.log('selected product', this.selected);
     this.productOptions = []; // product names
     const filteredBrandIds: any = [];
 

@@ -1,0 +1,54 @@
+@import '../../../styles.scss';
+
+.sales-report-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+
+  .selectors {
+    display: flex;
+    gap: 20px;
+
+    .selector {
+      min-width: 200px;
+      padding: 10px;
+      background-color: $gray6;
+      color: $gray-text;
+      font-size: 15px;
+      font-weight: 500;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+
+::ng-deep {
+  ngx-charts-bar-vertical {
+    background-color: $gray6;
+    padding: 50px 30px;
+    border-radius: 10px;
+  }
+}
+
+
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
